@@ -22,7 +22,7 @@ h1, h2, h3, p  {
 
 }
 
-.nav a {
+.nav-link {
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -31,19 +31,24 @@ h1, h2, h3, p  {
     line-height: 20px;
 }
 
-.nav a:hover,
+.nav-link:hover,
 .footer-menu a:hover {
     text-shadow: 0.25px 0.1px 0px #222, -0.25px -0.1px 0px #222;
     display: block;
     cursor: pointer;
     text-decoration: underline;
     opacity: 1;
+    transition: all 1s ease-out;
 }
 
 .nav-about {
     margin-left: 504px;
     margin-right: 85px;
     margin-top: 3px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+
 }
 
 .nav-syllabus {
@@ -52,12 +57,12 @@ h1, h2, h3, p  {
 
 .nav-logo {
     padding-right: 101px;
-    padding-left: 102px;
+    padding-left: 101px;
     transform: translateY(-1px);
 }
 
 .nav-projects {
-    margin-right: 84px;
+    margin-right: 85px;
     margin-top: 2px;
 }
 
@@ -116,6 +121,9 @@ h1, h2, h3, p  {
     height: 46px;
     background: #00AFDB;
     border: none;
+}
+.btn:hover {
+    background: #009CC2;
 }
 
 .btn-main {
@@ -325,7 +333,7 @@ padding-bottom: 11px;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 598px;
+    height: 524px;
     background-image: url(assets/img/sign-up.jpg);
 }
 
@@ -335,7 +343,7 @@ padding-bottom: 11px;
     
     width: 442px;
     height: 105px;
-    padding-top: 217px;
+    padding-top: 200px;
     transform: translateX(18px);
 }
 
@@ -418,14 +426,18 @@ padding-bottom: 11px;
 
 .btn-gplay,
 .btn-apple {
-    width: 188px;
-    height: 50px;
+    width: 183px;
+    height: 46px;
     text-align: start;
     padding: 18px 17px 16px 17px;
+    transform: translateX(-2px);
 }
 
+.btn-gplay {
+    padding: 14px 19px;
+}
 .btn-apple {
-    padding: 19px;
+    padding: 14px 19px;
 }
 
 .btn-gplay:hover,
@@ -441,7 +453,7 @@ padding-bottom: 11px;
     display: block;
     position: absolute;
     width: 60px;
-    height: 50px;
+    height: 46px;
     background: #009CC2;
     content: "";
     background-image: url(assets/img/android.svg);
@@ -459,15 +471,15 @@ padding-bottom: 11px;
 .btn-apple::after {
     display: block;
     position: absolute;
-    width: 60px;
-    height: 50px;
+    width: 57px;
+    height: 46px;
     background: #009CC2;
     content: "";
     background-image: url(assets/img/apple.svg);
     background-repeat: no-repeat;
     background-position: center;
     top: 0px;
-    left: 128px;
+    left: 127px;
 }
 
 .buttom-grup {
